@@ -1,0 +1,73 @@
+\documentclass[zihao=-4]{ctexbook}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{legalpaper, landscape}
+\xeCJKsetup{AutoFallBack=true}
+\setCJKmainfont[FallBack=FZSONG-ZhongHuaSongPlane02.TTF]{FZSONG-ZhongHuaSongPlane00.TTF}
+\newCJKfontfamily\fzkaiExtend{FZKaiS-Extended-1.ttf}
+\newCJKfontfamily\fzkaiNormal{FZKTJW.TTF}
+\newCJKfontfamily\fzkaiJianFan{FZKTK.TTF}
+\newCJKfontfamily\fzsong{FZSongS-SIP.TTF}
+\newCJKfontfamily\fzsongS{FZSongS.TTF}
+\newCJKfontfamily\zhzero{FZSONG-ZhongHuaSongPlane00.TTF}
+\newCJKfontfamily\zhtwo{FZSONG-ZhongHuaSongPlane02.TTF}
+\newCJKfontfamily\notoSans{NotoSansSC-Regular.otf}
+\newCJKfontfamily\notoSerif{NotoSerifSC-Regular.otf}
+\newCJKfontfamily\ukai{AR-PL-UKai-CN-Regular.ttc}
+\newCJKfontfamily\fkai{FandolKai-Regular.otf}
+\newCJKfontfamily\jckai{FZJCGFKTK.TTF}
+
+
+\newcommand{\qiao}{\char"25062}
+\newcommand{\hai}{\char"25050}
+\newcommand{\ceng}{\char"22524}
+\newcommand{\jiji}{\char"23B20}
+\newcommand{\baba}{\char"23B36}
+\newcommand{\gua}{\char"24AEB}
+\newcommand{\bie}{\char"243F0}
+\newcommand{\wu}{\char"206C6}
+\newcommand{\qian}{\char"20803}
+\newcommand{\bang}{\char"20CD0}
+\newcommand{\xixi}{\char"23891}
+
+\begin{document}
+\chapter{字体测试}
+
+{\large
+    通过红楼梦中的生僻字，比较多种中文字体库的显示效果
+
+\begin{center}
+    \begin{tabular}{||c|c|c||}
+        \hline
+        字体名                      & 字体文件下载地址                                                                                                                         & 文字示例                                                                            \\
+        \hline
+        方正楷体扩展字符集          & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E6%A5%B7%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FZKaiS-Extended-1.ttf}{FZKaiS-Extended-1.ttf} & {\fzkaiExtend{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}} \\
+        \hline
+        方正楷体大陆简体(GB2312-80) & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E6%A5%B7%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FZKTJW.TTF}{FZKTJW.TTF} & {\fzkaiNormal{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        方正楷体简繁扩展(GBK)       & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E6%A5%B7%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FZKTK.TTF}{FZKTK.TTF} & {\fzkaiJianFan{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        Fandol楷体                  & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E6%A5%B7%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FandolKai-Regular.otf}{FandolKai-Regular.otf} & {\fkai{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        AR-PL-UKai楷体              & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E6%A5%B7%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/AR-PL-UKai-CN-Regular.ttc}{AR-PL-UKai-CN-Regular.ttc} & {\ukai{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        谷歌无衬线                  & \href{https://github.com/googlefonts/noto-cjk/blob/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf}{NotoSansSC-Regular.otf}                & {\notoSans{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}  \\
+        \hline
+        谷歌衬线                    & \href{https://github.com/googlefonts/noto-cjk/blob/main/Serif/OTF/SimplifiedChinese/NotoSerifCJKsc-Regular.otf}{NotoSerifSC-Regular.otf} & {\notoSerif{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}} \\
+        \hline
+        方正宋体 ExtB 字库          & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/tree/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E5%AE%8B%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FZSongS-SIP.TTF}{FZSongS-SIP.TTF} & {\fzsong{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        方正宋体 GB18030 字库       & \href{https://github.com/xiangrongjingujiu/FangZhengChaoDaZiFuJi/blob/master/                                                                                                                                                  %E6%96%B9%E6%AD%A3%E5%AE%8B%E4%BD%93%E8%B6%85%E5%A4%A7%E5%AD%97%E7%AC%A6%E9%9B%86/FZSongS.TTF}{FZSongS.TTF} & {\fzsongS{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        中华书局宋体00平面          & \href{https://github.com/xiangrongjingujiu/ZhongHuaSongFont/tree/master/                                                                                                                                                       %E4%B8%AD%E5%8D%8E%E4%B9%A6%E5%B1%80%E5%AE%8B%E4%BD%93%E5%AD%97%E5%BA%93/FZSONG_ZhongHuaSongPlane00_2021051420210514150927.TTF}{FZSONG-ZhongHuaSongPlane00.TTF} &  {\zhzero{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+        中华书局宋体02平面          & \href{https://github.com/xiangrongjingujiu/ZhongHuaSongFont/raw/master/                                                                                                                                                        %E4%B8%AD%E5%8D%8E%E4%B9%A6%E5%B1%80%E5%AE%8B%E4%BD%93%E5%AD%97%E5%BA%93/FZSONG_ZhongHuaSongPlane02_2021012120210122112919.TTF}{FZSONG-ZhongHuaSongPlane02.TTF} & {\zhtwo{字体测试 \qiao \hai \ceng \jiji \baba \gua \bie \wu \qian \bang \xixi}}\\
+        \hline
+    \end{tabular}
+\end{center}
+
+
+
+}
+\end{document}
